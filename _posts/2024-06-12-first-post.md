@@ -24,3 +24,18 @@ introduction to the lab. Also, we got to see the northern lights! Honestly, they
 I'll write another blog post soon on what I've been up to since returning from that trip. For now, enjoy these pics of our field trip.
 
 ![josh throwing trap](/docs/assets/img/IMG_9084.jpg) 
+
+![andi throwing trap](/docs/assets/img/IMG_9088.jpg)
+
+![checking trap](/docs/assets/img/IMG_9093.jpg)
+
+![stella](/docs/assets/img/IMG_9100.jpg)
+
+![northern lights](/docs/assets/img/IMG_9128.jpg)
+
+![sayward](/docs/assets/img/IMG_9154.jpg)
+
+![cabin](/docs/assets/img/IMG_9161.jpg)
+
+![parasite video](docs/assets/img/IMG_9097.MOV)
+
