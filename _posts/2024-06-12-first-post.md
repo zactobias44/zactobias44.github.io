@@ -37,5 +37,4 @@ I'll write another blog post soon on what I've been up to since returning from t
 
 ![cabin](/docs/assets/img/IMG_9161.jpg)
 
-![parasite video](docs/assets/img/IMG_9097.MOV)
 
