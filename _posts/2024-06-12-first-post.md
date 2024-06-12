@@ -21,4 +21,6 @@ populations which are supposed to go a bit later.
 Highlights of the trip? Obviously getting to do great science was a plus, but getting to know the three guys on my trip was the best part. What an awesome 
 introduction to the lab. Also, we got to see the northern lights! Honestly, they look a lot "poppier" in the photos, but it was still amazing to see. 
 
-I'll write another blog post soon on what I've been up to since returning from that trip. For now, enjoy these pics of our field trip. 
+I'll write another blog post soon on what I've been up to since returning from that trip. For now, enjoy these pics of our field trip.
+
+![josh throwing trap](../docs/assets/img/IMG_9084.HEIC) 
