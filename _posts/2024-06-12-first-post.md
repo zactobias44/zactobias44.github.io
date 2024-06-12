@@ -23,4 +23,4 @@ introduction to the lab. Also, we got to see the northern lights! Honestly, they
 
 I'll write another blog post soon on what I've been up to since returning from that trip. For now, enjoy these pics of our field trip.
 
-![josh throwing trap](../docs/assets/img/IMG_9084.HEIC) 
+![josh throwing trap](../docs/assets/img/IMG_9084.jpg) 
