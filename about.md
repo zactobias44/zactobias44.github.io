@@ -10,7 +10,8 @@ A bit about my scientific past. Growing up in San Diego, I had long been fascina
 Bay. In 2011 I was lucky enough to land an REU at Sripps Institution of Oceanography, where I worked with Jules Jaffe. There I worked with an image classifier to identify different species of 
 zooplankton. I also had the opportunity to do a six-day research cruise in the Southern California Bight.
 
- As a senior at LC, I began researching the development of the zebrafish nervous system in the Weissman-Unni Lab. We also used the zebrafish as a model for understanding neurodegenerative disease. After graduating in 2012, I became a lab tech/manager in the same lab, where I was responsible for zebrafish husbandry, training 
+As a senior at Lewis & Clark College, I began researching the development of the zebrafish nervous system in the Weissman-Unni Lab. We also used the zebrafish as a model for understanding 
+neurodegenerative disease. After graduating in 2012, I became a lab tech/manager in the same lab, where I was responsible for zebrafish husbandry, training 
 undergrads, and research. In 2013 I also became the microscopy coordinator for the new microscopy core at LC, including a laser-scanning confocal microscope. While I enjoyed research in zebrafish, 
 I really was itching to take the molecular skills I had learned and apply them to systems with more of a natural history component. 
 
