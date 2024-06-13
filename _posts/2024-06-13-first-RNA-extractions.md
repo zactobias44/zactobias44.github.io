@@ -15,32 +15,30 @@ Okay making some adjustments to the protocol.
 Turns out that 300ul is too much for initial volume, because once you add equal volume of lysis buffer and then an equal volume of EtOH to that, you have too much volume for the column and I don't 
 want to run it through twice. Let's do it in 200ul.
 
-200 ul RNA/DNA Shield
-10 ul proteinase K
-20 ul proteinase K buffer
+* 200 ul RNA/DNA Shield, 10 ul proteinase K, 20 ul proteinase K buffer
 
-Digest for 2 hours at RT after mechanical homogenization with pestle (especially for gill)
+* Digest for 2 hours at RT after mechanical homogenization with pestle (especially for gill)
 
-Add 230 ul of RNA Lysis Buffer
+* Add 230 ul of RNA Lysis Buffer
 
-Spin through Spin-Away Column (yellow) and KEEP THE FLOW THROUGH
+* Spin through Spin-Away Column (yellow) and KEEP THE FLOW THROUGH
 
-Mix flowthrough with 460 ul of 100% EtOH.
+* Mix flowthrough with 460 ul of 100% EtOH.
 
-Pass through Zymo-SPin IIICG Column (green)
+* Pass through Zymo-SPin IIICG Column (green)
 
-Discard flow through!
+* Discard flow through!
 
-Mix n x 5 ul x 1.05 DNAse and n x 75 ul x 1.05 DNA digestion buffer.
+* Mix n x 5 ul x 1.05 DNAse and n x 75 ul x 1.05 DNA digestion buffer.
 
-Add 80 ul of mix to each column. Incubate for 15 min at RT. 
+* Add 80 ul of mix to each column. Incubate for 15 min at RT. 
 
-Wash with 400 ul of RNA prep buffer
+* Wash with 400 ul of RNA prep buffer
 
-Wash with 700 ul RNA wash buffer
+* Wash with 700 ul RNA wash buffer
 
-Wash with another 400 ul RNA wash buffer. SPin for 1 min
+* Wash with another 400 ul RNA wash buffer. SPin for 1 min
 
-Elute in 50 ul of nuclease free water
+* Elute in 50 ul of nuclease free water
 
-Quantify with Qubit BR RNA kit. 
+* Quantify with Qubit BR RNA kit. 
