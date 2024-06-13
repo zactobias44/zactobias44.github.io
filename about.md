@@ -1,6 +1,6 @@
 ## Who is Zac Tobias?
 
-![zac headshot](/docs/assets/img/IMG_0572.jpg)
+<img src="/docs/assets/img/IMG_0572.jpg" width="250">
 
 Hi! I'm Zac Tobias. Currently (6/2024), I am a postdoc in the Rennison Lab in the Ecology, Behavior & Evolution department at University of California, San Diego. I'm broadly interested in 
 understanding the genomic and physiological mechanisms underlying evolutionary adaptation to novel environments. To do so, I use biological invasions and natural colonization processes in taxa 
