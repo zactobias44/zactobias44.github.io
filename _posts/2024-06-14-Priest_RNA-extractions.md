@@ -6,3 +6,14 @@ took all of it, so there are some samples that we cannot re-do if something goes
 
 Also, when homogenizing the tissue with the pestle, make sure to "plunge" up and down a bit at first to bring the sample off bottom of tube. Then forcefully twist pestle, ensuring contact between 
 gill and side wall of tube. Homogenize to tiny bits. After 2 hour digestion in pK, these should be dissolved. 
+
+Note for future batches of 24. When making the digestion mix (RNA/DNA shield, pK, and pK buffer), make up a master mix with enough for 26 tubes. There is plenty of reagent for this. I did 25x this 
+time and the last tube was all bubbles. Also, try just mixing by pipetting up and down instead of vortexing. Should make it easier. 
+
+So the 26 sample MM should be:
+
+* 5.2 ml DNA/RNA shield
+* 260 ul proteinase K
+* 520 ul pK digestion buffer
+
+Use dispensing pipette to distribute 230 ul into each tube. And remember, ALWAYS USE FILTER TIPS!
