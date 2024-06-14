@@ -42,3 +42,10 @@ want to run it through twice. Let's do it in 200ul.
 * Elute in 50 ul of nuclease free water
 
 * Quantify with Qubit BR RNA kit. 
+
+So in the end I got pretty decent yields. Liver were in the range of 20-30 ng/ul. Gill was ~65 and one was 550?!?! Crazy. Took 260/280 and 260/230 measurements on the nanodrop too. Those were all >2 
+with exception of two livers in the 1.8 range for 260/230.
+
+Will proceed with 24 RNA extractions tomorrow.
+
+
