@@ -17,3 +17,5 @@ So the 26 sample MM should be:
 * 520 ul pK digestion buffer
 
 Use dispensing pipette to distribute 230 ul into each tube. And remember, ALWAYS USE FILTER TIPS!
+
+Anyway, back to business. While you wait for this 2 hr digestion, do some finclipping. 
