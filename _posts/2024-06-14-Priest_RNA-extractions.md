@@ -21,3 +21,6 @@ Use dispensing pipette to distribute 230 ul into each tube. And remember, ALWAYS
 About 1.5 hours into the digestion I agitated the tubes and notice that there was still some undigested tissue. Seemed to be mostly the cartilaginous bits, not the feathery vascularized tissue. 
 Still, to ensure proper lysis, let's extend the digestion to 3+ hours. I have a meeting at 1 that will probably just go 30 min, so a 10:30-1:30 digestion will be an even 3 hours. Obviously, some of 
 the lower numbered tubes will digest longer, because the timer started at the end of the last tube. No matter. 
+
+When all was said and done, we got awesome yields. Mean of 142 ng/ul. Decent amount of variability though. Min=32.7 Max=357. Seems like the kit is working well. Next week we'll move on to finish up 
+Priest gills and start on another population. 
