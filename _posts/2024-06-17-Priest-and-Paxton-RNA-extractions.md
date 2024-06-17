@@ -31,6 +31,8 @@ So I have 13 of each Priest ecotype. 5 females and 8 males for each ecotype. Wil
 
 Finished homogenizing at 11:00 am. Two hour digestion. Start at 1:00 pm
 
+Finished up extractions around 3:00 pm. Good yields again. Average 222 ng/ul. Min=50 Max=600. Continue with extractions tomorrow.
+
 For tomorrow (6/18), we'll continue with Paxton. Again, we'll try to balance the sexes within each ecotype. Accordingly, we will have the following samples:
 
 * 2024_DJR_056
