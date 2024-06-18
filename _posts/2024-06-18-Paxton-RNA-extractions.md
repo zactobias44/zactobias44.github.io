@@ -26,3 +26,5 @@ Okay today we are continuing with RNA extractions. All today will be from Paxton
 * 2024_DJR_080
 * 2024_DJR_081
 * 2024_DJR_082
+
+Couldn't find 081 and 082 at first, not in box. Turns out 081-088 are in a random bag. Put the bag on top shelf of freezer door and labelled. 
