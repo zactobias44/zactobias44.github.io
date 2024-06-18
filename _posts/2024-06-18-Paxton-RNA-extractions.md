@@ -27,4 +27,6 @@ Okay today we are continuing with RNA extractions. All today will be from Paxton
 * 2024_DJR_081
 * 2024_DJR_082
 
-Couldn't find 081 and 082 at first, not in box. Turns out 081-088 are in a random bag. Put the bag on top shelf of freezer door and labelled. 
+Couldn't find 081 and 082 at first, not in box. Turns out 081-088 are in a random bag. Put the bag on top shelf of freezer door and labelled.
+
+Extractions went really well. Average 243 ng/ul. Min=65.4 Max=609. 
