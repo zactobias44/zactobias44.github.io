@@ -17,4 +17,7 @@ our sampling is).
 
 Anyway, these are some of my early thoughts about a PRFB. I think it could fit into the RoL framework (geno,pheno,enviro). There are a few people who I think would be neat to collobrate on this, as 
 I know that is another desirable component of a PRFB. William Cresko at U of O. Did a lot of the stickleback mitotype stuff. Patricia Schulte at UBC. Fish physiology. Eric Pavlovacs at UCSC. 
-Apparently has done a lot of stickleback physiology as well. Once I have a better idea of what I am doing I should email these folks.   
+Apparently has done a lot of stickleback physiology as well. Once I have a better idea of what I am doing I should email these folks. 
+
+Went to the fishroom for orientation. Emerson just showed me around. Pretty straightforward. Got my ACP badge and now should have full access. Labeled tanks with the labels. Have to print out and 
+laminate a few more because we were short.  
