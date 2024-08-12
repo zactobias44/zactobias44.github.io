@@ -19,7 +19,7 @@ extractions).
 
 Here's the pic of the gel.
 
-![gel](/docs/assets/img/IMG_9913.jpg)
+![gel](/docs/assets/img/IMG_9913.jpeg)
 
 We don't have a gel dock, so we take pictures with our phones using a carboard box and a transilluminator. So, crummy pictures but you get the idea.
 
