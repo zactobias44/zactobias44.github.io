@@ -28,3 +28,12 @@ yield (682 ng/ul), so maybe makes sense that that one would have the highest amo
 
 In either case, because it only seems to probably be only a handful of samples (hopefully), I think we can just proceed. The poly-A enrichment should be another step to filter out any DNA. I 
 suppose we can try to use bioinformatic methods to see if this is a persistent issue (mapping to introns, for example). I really hope this works!
+
+So I spoke with Diana about this, and what we are going to do is a couple things. First, I will take some adult fish from the fish room and extract gills again. For one I will use DNAse (with the 
+wash) and the other I will do just the wash. Meanwhile, I'll also split one of the high-yield RNA samples (e.g. 407), and treat half of it with DNAse and repurify. Do a PCR with all of these and see 
+what it looks like. If the newly extracted sample treated with DNAse still has trace DNA, then this is probably a common issue and we can't do much about the DNA contam. If the second DNAse 
+treatment gets rid of the band for 407, then that would suggest that, if we wanted to, we could do another DNAse treatment. If it doesn't, then there's no point and we should just go for it.
+
+I think the conclusion is that we should just go for it, but I'll hold off until we have this extra information.
+
+I was supposed to go use the robot at JCVI this Thursday, but looks like we'll probably have to push until next week. I'll let Ariel know.
