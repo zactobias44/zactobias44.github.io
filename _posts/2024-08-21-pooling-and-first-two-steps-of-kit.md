@@ -10,3 +10,12 @@ of enzyme, but they gave us 10ul and we only need 1.1ul for each time we do this
 
 Going to lunch now. EXO is incubating now on a 50 min program. When I return I will proceed to second strand synthesis and then do another bead clean and quantification. At that point it will be 
 safe to store at -20 C until next week when I return. Then I'll do tagmentation and amplification.  
+
+After lunch, finished EXO and moved onto SSS. The tube got crumpled in the thermocycler, but I was able to salvage the pool, thank god. Using strip tubes now. 
+
+Finished SSS now doing bead clean. Will Qubit shortly.
+
+3.07 ng/ul! So we have 18 ul of cDNA left, that puts us at 55.26 ng. We can only use up to 15ul in the next step, so that's 46.05 ng. The maximum it wants is 20ng for tagmentation, so we just need 
+to use 6.5 ul (19.955 ng). We'll add that to 4ul TAB, 3ul TE, and 6.5ul of water, for a 20ul rxn volume. 
+
+I will start tagmentation on Tuesday!
