@@ -15,4 +15,4 @@ I made a PCA (see below), and there is no real pattern when looking at ecotype. 
 the dataframe by colSums (to get most highly expressed genes), it's a bunch of housekeeping genes like hemaglobin, actin, keratin, CO1, etc. I wonder what this might look like with the deeper 
 sequencing... Hopefully not like this!
 
-![PCA](../docs/assets/img/MiSeqNano_PCA.png) 
+![PCA](docs/assets/img/MiSeqNano_PCA.png) 
