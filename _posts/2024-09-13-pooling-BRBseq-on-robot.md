@@ -16,3 +16,7 @@ the dataframe by colSums (to get most highly expressed genes), it's a bunch of h
 sequencing... Hopefully not like this!
 
 ![PCA](docs/assets/img/MiSeqNano_PCA.png) 
+
+Okay finished pooling and then finished the next two steps (EXO and SSS) at the lab. 
+
+8.87 ng/ul of cDNA! Onto tagmentation on Monday!
