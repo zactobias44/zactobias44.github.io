@@ -17,7 +17,7 @@ positives. It's certainly better than 48%, but not as good as it could be. Next 
 Also, I realized that the reason my NCBI downloads filled up the hard drive is that the file size i got from entrez-direct was the size of the .sra, not fastq. SRA are binary so much smaller. So I'm 
 gzipping everything now, but still not sure that will get us there... We'll see. We might need a larger drive, or multiple.
 
-Okay back to STAR. So I found this comment in a STAR issue ![thread](https://github.com/alexdobin/STAR/issues/455) on GitHub saying that adapter trimming is necessary for short RNA sequencing. I 
+Okay back to STAR. So I found this comment in a STAR issue [thread](https://github.com/alexdobin/STAR/issues/455) on GitHub saying that adapter trimming is necessary for short RNA sequencing. I 
 think this is meant more for small RNAs instead of 
 this 3' stuff, but anyway, maybe I should try trimming first? This should only really matter if the read length is longer than the insert, which it shouldn't be since my peak was around 430bp. Ahh 
 who knows.
