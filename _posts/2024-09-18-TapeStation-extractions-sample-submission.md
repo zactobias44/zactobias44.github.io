@@ -5,6 +5,6 @@ samples to Davis today.
 
 Here is the tapestation trace for the gill deep sequencing library BRB-seq.
 
-![tapestation](../docs/assets/img/deep_seq_gill_tapestation.png)
+![tapestation](/docs/assets/img/deep_seq_gill_tapestation.png)
 
 
