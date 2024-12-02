@@ -1,0 +1,3 @@
+## 12/2/24 More DNA Extractions
+
+Just chugging through more extractions today. If I have time maybe I'll Qubit those from last week too...
