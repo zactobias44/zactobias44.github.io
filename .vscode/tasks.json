@@ -1,0 +1,29 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Sync CV PDF",
+      "type": "shell",
+      "command": "make",
+      "args": [
+        "sync-cv"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Stage CV PDF",
+      "type": "shell",
+      "command": "make",
+      "args": [
+        "stage-cv"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    }
+  ]
+}
