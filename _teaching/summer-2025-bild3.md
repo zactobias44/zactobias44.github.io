@@ -9,14 +9,8 @@ term: "Summer 2025"
 location: "City, Country"
 ---
 
-DESCRIPTION 
-Heading 1
-======
+##Course content
+CONTENT
 
-subdescription
-
-Heading 2
-======
-
-Heading 3
-======
+##Sample syllabus
+SYLLABUS LINK
