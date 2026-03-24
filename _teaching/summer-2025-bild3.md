@@ -4,7 +4,8 @@ collection: teaching
 type: "Undergraduate course"
 permalink: /teaching/summer-2025-bild3
 venue: "UCSD, Biological Sciences"
-date: 2025-01-01
+date: 2025-07 -01
+term: "Summer 2025"
 location: "City, Country"
 ---
 
