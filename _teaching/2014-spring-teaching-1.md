@@ -1,10 +1,10 @@
 ---
-title: "Teaching experience 1"
+title: "BILD 3 - Organismic and Evolutionary Biology"
 collection: teaching
 type: "Undergraduate course"
-permalink: /teaching/2014-spring-teaching-1
-venue: "University 1, Department"
-date: 2014-01-01
+permalink: /teaching/summer-2025-bild3
+venue: "UCSD, Biological Sciences"
+date: 2025-01-01
 location: "City, Country"
 ---
 
