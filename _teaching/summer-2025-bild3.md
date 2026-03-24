@@ -9,8 +9,8 @@ term: "Summer 2025"
 location: "City, Country"
 ---
 
-##Course content
+## Course content
 CONTENT
 
-##Sample syllabus
+## Sample syllabus
 SYLLABUS LINK
