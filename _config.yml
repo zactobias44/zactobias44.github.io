@@ -28,7 +28,9 @@ author:
   pronouns         : "he/him"  
   bio              : "Investigating the molecular and physiological basis of evolutionary adaptation to novel stressors in aquatic organisms."
   location         : "San Diego, CA"
-  employer         : "University of California, San Diego and University of San Diego"
+  employers:
+    - "University of California, San Diego (postdoc)"
+    - "University of San Diego (lecturer)"
   uri              : # URL
   email            : "zatobias@ucsd.edu" 
 
