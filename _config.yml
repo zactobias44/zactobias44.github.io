@@ -23,7 +23,7 @@ repository               : "academicpages/academicpages.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "images/profile.jpg"
+  avatar           : "profile.jpg"
   name             : "Zac Tobias"
   pronouns         : "he/him"  
   bio              : "Investigating the molecular and physiological basis of evolutionary adaptation to novel stressors in aquatic organisms."
