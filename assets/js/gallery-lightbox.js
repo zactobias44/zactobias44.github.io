@@ -39,6 +39,7 @@
 
     function openLightbox(index) {
       render(index);
+      overlay.hidden = false;
       overlay.classList.add("is-open");
       overlay.setAttribute("aria-hidden", "false");
       document.body.classList.add("gallery-lightbox-open");
@@ -49,6 +50,7 @@
       overlay.setAttribute("aria-hidden", "true");
       document.body.classList.remove("gallery-lightbox-open");
       imageNode.removeAttribute("src");
+      overlay.hidden = true;
     }
 
     triggerNodes.forEach(function (node, index) {

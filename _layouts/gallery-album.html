@@ -56,9 +56,11 @@ layout: default
   </article>
 </div>
 
-<div class="gallery-lightbox" data-lightbox-overlay aria-hidden="true">
+<div class="gallery-lightbox" data-lightbox-overlay aria-hidden="true" hidden>
   <div class="gallery-lightbox__dialog" role="dialog" aria-modal="true" aria-label="{{ page.title }} image viewer">
-    <button class="gallery-lightbox__control" type="button" data-lightbox-prev aria-label="Previous image">&lsaquo;</button>
+    <button class="gallery-lightbox__control" type="button" data-lightbox-prev aria-label="Previous image">
+      <span aria-hidden="true">&#10094;</span>
+    </button>
     <div class="gallery-lightbox__stage">
       <div class="gallery-lightbox__topbar">
         <button class="gallery-lightbox__close" type="button" data-lightbox-close aria-label="Close image viewer">&times;</button>
@@ -68,6 +70,8 @@ layout: default
       </div>
       <div class="gallery-lightbox__caption" data-lightbox-caption></div>
     </div>
-    <button class="gallery-lightbox__control" type="button" data-lightbox-next aria-label="Next image">&rsaquo;</button>
+    <button class="gallery-lightbox__control" type="button" data-lightbox-next aria-label="Next image">
+      <span aria-hidden="true">&#10095;</span>
+    </button>
   </div>
 </div>
