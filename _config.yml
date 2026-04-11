@@ -172,6 +172,7 @@ exclude:
   - "*.sublime-workspace"
   - .asset-cache
   - .bundle
+  - docs
   - .github
   - .jekyll-assets-cache
   - .sass-cache
