@@ -5,7 +5,7 @@
     return stem.replace(/[-_]+/g, " ").trim();
   }
 
-  document.addEventListener("DOMContentLoaded", function () {
+  function initGalleryLightbox() {
     var galleryRoot = document.querySelector("[data-gallery-lightbox]");
     if (!galleryRoot) {
       return;
@@ -90,5 +90,11 @@
         render(currentIndex + 1);
       }
     });
-  });
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", initGalleryLightbox);
+  } else {
+    initGalleryLightbox();
+  }
 })();
