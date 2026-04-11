@@ -11,6 +11,10 @@
       return;
     }
 
+    if (galleryRoot.getAttribute("data-gallery-ready") === "true") {
+      return;
+    }
+
     var triggerNodes = Array.prototype.slice.call(
       galleryRoot.querySelectorAll("[data-gallery-image]")
     );
@@ -18,6 +22,8 @@
     if (!triggerNodes.length) {
       return;
     }
+
+    galleryRoot.setAttribute("data-gallery-ready", "true");
 
     var overlay = document.querySelector("[data-lightbox-overlay]");
     var imageNode = overlay.querySelector("[data-lightbox-image]");
@@ -97,4 +103,6 @@
   } else {
     initGalleryLightbox();
   }
+
+  window.initGalleryLightbox = initGalleryLightbox;
 })();
