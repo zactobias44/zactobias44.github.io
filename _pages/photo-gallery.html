@@ -1,0 +1,61 @@
+---
+layout: archive
+title: "Photo Gallery"
+permalink: /photo-gallery/
+author_profile: false
+---
+
+{% include base_path %}
+
+<div class="gallery-intro">
+  <p>Browse photos by project or album. Click a cover image to open a dedicated album page with a lightbox viewer.</p>
+  <p>To add a new album later, create a file in <code>_galleries/</code> and drop the photos into a matching folder inside <code>images/galleries/</code>.</p>
+</div>
+
+<div class="gallery-grid">
+  {% assign sorted_galleries = site.galleries | sort: "order" %}
+  {% for album in sorted_galleries %}
+    {% assign gallery_dir = album.gallery_dir | default: "" %}
+    {% assign image_count = 0 %}
+    {% assign fallback_image = "" %}
+    {% assign sorted_files = site.static_files | sort: "path" %}
+    {% for file in sorted_files %}
+      {% if file.path contains gallery_dir %}
+        {% assign extension = file.extname | downcase %}
+        {% if extension == ".jpg" or extension == ".jpeg" or extension == ".png" or extension == ".webp" or extension == ".gif" %}
+          {% assign image_count = image_count | plus: 1 %}
+          {% if fallback_image == "" %}
+            {% assign fallback_image = file.path %}
+          {% endif %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+
+    {% if album.cover_image %}
+      {% if album.cover_image contains "/" %}
+        {% assign cover_image = album.cover_image %}
+      {% else %}
+        {% assign cover_image = album.gallery_dir | append: album.cover_image %}
+      {% endif %}
+    {% else %}
+      {% assign cover_image = fallback_image %}
+    {% endif %}
+
+    <article class="gallery-card">
+      <a class="gallery-card__link" href="{{ base_path }}{{ album.url }}">
+        <div class="gallery-card__media">
+          {% if cover_image != "" %}
+            <img src="{{ base_path }}{{ cover_image }}" alt="{{ album.title }} cover image" loading="lazy">
+          {% else %}
+            <div class="gallery-card__empty">Add photos to {{ album.gallery_dir }}</div>
+          {% endif %}
+        </div>
+        <div class="gallery-card__body">
+          <h2>{{ album.title }}</h2>
+          <span class="gallery-card__meta">{{ image_count }} photo{% unless image_count == 1 %}s{% endunless %}</span>
+          {% if album.excerpt %}<p>{{ album.excerpt }}</p>{% endif %}
+        </div>
+      </a>
+    </article>
+  {% endfor %}
+</div>

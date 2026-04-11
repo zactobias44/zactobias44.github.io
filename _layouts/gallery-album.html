@@ -1,0 +1,73 @@
+---
+layout: default
+---
+
+{% include base_path %}
+
+{% assign gallery_dir = page.gallery_dir | default: "" %}
+{% assign caption_key = page.caption_key | default: page.slug %}
+{% assign album_captions = site.data.gallery_captions[caption_key] %}
+
+<div id="main" role="main">
+  <article class="page gallery-page" itemscope itemtype="http://schema.org/CreativeWork">
+    <div class="page__inner-wrap">
+      <header>
+        {% if page.title %}<h1 class="page__title" itemprop="headline">{{ page.title }}</h1>{% endif %}
+        {% if page.excerpt %}<p class="gallery-page__lead">{{ page.excerpt }}</p>{% endif %}
+      </header>
+
+      <section class="page__content" itemprop="text">
+        {{ content }}
+
+        {% assign image_count = 0 %}
+        <div class="gallery-page__thumbnails" data-gallery-lightbox>
+          {% assign sorted_files = site.static_files | sort: "path" %}
+          {% for file in sorted_files %}
+            {% if file.path contains gallery_dir %}
+              {% assign extension = file.extname | downcase %}
+              {% if extension == ".jpg" or extension == ".jpeg" or extension == ".png" or extension == ".webp" or extension == ".gif" %}
+                {% assign image_count = image_count | plus: 1 %}
+                {% assign image_caption = file.name | replace: file.extname, '' | replace: '-', ' ' | replace: '_', ' ' %}
+                {% if album_captions and album_captions[file.name] %}
+                  {% assign image_caption = album_captions[file.name] %}
+                {% endif %}
+                <button
+                  class="gallery-card__thumb"
+                  type="button"
+                  data-gallery-image
+                  data-full-image="{{ base_path }}{{ file.path }}"
+                  data-image-alt="{{ page.title }} image {{ image_count }}"
+                  data-image-caption="{{ image_caption }}"
+                >
+                  <img src="{{ base_path }}{{ file.path }}" alt="{{ page.title }} image {{ image_count }}" loading="lazy">
+                </button>
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+        </div>
+
+        {% if image_count == 0 %}
+          <div class="gallery-page__empty">
+            Add images to <code>{{ gallery_dir }}</code> and they will appear here automatically.
+          </div>
+        {% endif %}
+      </section>
+    </div>
+  </article>
+</div>
+
+<div class="gallery-lightbox" data-lightbox-overlay aria-hidden="true">
+  <div class="gallery-lightbox__dialog" role="dialog" aria-modal="true" aria-label="{{ page.title }} image viewer">
+    <button class="gallery-lightbox__control" type="button" data-lightbox-prev aria-label="Previous image">&lsaquo;</button>
+    <div class="gallery-lightbox__stage">
+      <div class="gallery-lightbox__topbar">
+        <button class="gallery-lightbox__close" type="button" data-lightbox-close aria-label="Close image viewer">&times;</button>
+      </div>
+      <div class="gallery-lightbox__frame">
+        <img class="gallery-lightbox__image" src="" alt="" data-lightbox-image>
+      </div>
+      <div class="gallery-lightbox__caption" data-lightbox-caption></div>
+    </div>
+    <button class="gallery-lightbox__control" type="button" data-lightbox-next aria-label="Next image">&rsaquo;</button>
+  </div>
+</div>

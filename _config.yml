@@ -235,6 +235,9 @@ collections:
   talks:
     output: true
     permalink: /:collection/:path/
+  galleries:
+    output: true
+    permalink: /photo-gallery/:path/
 
 
 # These settings control how pages and collections are included in the site
@@ -292,6 +295,15 @@ defaults:
       layout: talk
       author_profile: true
       share: true
+  # _galleries
+  - scope:
+      path: ""
+      type: galleries
+    values:
+      layout: gallery-album
+      author_profile: false
+      share: false
+      comments: false
 
 
 # Sass/SCSS
