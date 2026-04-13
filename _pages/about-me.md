@@ -14,18 +14,10 @@ In addition to research, my winding academic career has involved numerous teachi
 
 Below I have a bit more about my life's path through academia if you are interested in knowing more about where I've been. 
 
-## Current work
+## Academic Path
 
-Add a short paragraph about your current position, projects, or research focus.
+CONTENT COMING
 
-## Background
+## Outside of Work
 
-Add a short paragraph about your training, past positions, or how you got into this field.
-
-## Interests
-
-Add a short paragraph about your main academic, professional, or creative interests.
-
-## Outside of work
-
-Add anything personal you want visitors to know, such as hobbies, fieldwork interests, teaching philosophy, or fun facts.
+CONTENT COMING
