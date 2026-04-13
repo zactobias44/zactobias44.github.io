@@ -4,7 +4,7 @@ permalink: /about-me/
 author_profile: true
 ---
 
-![alt](images/zac_jtree.jpeg)
+![alt](/images/zac_jtree.jpeg)
 
 Write a short introduction here. This can be a few sentences that explain who you are, what you do, and what kind of work or questions motivate you.
 
