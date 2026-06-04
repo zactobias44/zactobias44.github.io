@@ -31,3 +31,11 @@ author_profile: false
 12. Korunes, K. L., & Samuk, K. (2021). pixy: Unbiased estimation of nucleotide diversity and divergence in the presence of missing data. *Molecular Ecology Resources*, 21, 1359-1368.
 
 13. Peichel, C. L., & Marques, D. A. (2017). The genetic and molecular architecture of phenotypic diversity in sticklebacks. *Philosophical Transactions Of The Royal Society B: Biological Sciences*, 372. 20150486. 
+
+14. Becker, C. G., & Becker, T. (2015). Neuronal regeneration from ependymo-radial glial cells: cook, little pot, cook!. *Developmental Cell*, 32, 516-527.
+
+15. Kroehne, V., Freudenreich, D., Hans, S., Kaslin, J., & Brand, M. (2011). Regeneration of the adult zebrafish brain from neurogenic radial glia-type progenitors. *Development*, 138, 4831-4841.
+
+16. Chung, M. I., Kwon, T., Tu, F., Brooks, E. R., Gupta, R., Meyer, M., ... & Wallingford, J. B. (2014). Coordinated genomic control of ciliogenesis and cell movement by RFX2. *Elife*, 3, e01439.
+
+17. Palla, A. R., Hilgendorf, K. I., Yang, A. V., Kerr, J. P., Hinken, A. C., Demeter, J., ... & Blau, H. M. (2022). Primary cilia on muscle stem cells are critical to maintain regenerative capacity and are lost during aging. *Nature Communications*, 13, 1439.
