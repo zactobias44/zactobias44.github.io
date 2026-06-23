@@ -1,6 +1,10 @@
 <article class="teaching-entry">
   <h4 class="teaching-entry__title">{{ include.post.title }}</h4>
-  <p class="teaching-entry__meta">{{ include.post.type }} <span aria-hidden="true">·</span> <i>{{ include.post.venue }}</i> <span aria-hidden="true">·</span> {{ include.post.term | default: include.post.date | date: "%Y" }}</p>
+  <p class="teaching-entry__meta">
+    <span>{{ include.post.type }}</span>
+    <span>{{ include.post.venue }}</span>
+    <span>{{ include.post.term | default: include.post.date | date: "%Y" }}</span>
+  </p>
   <div class="teaching-entry__content">
     {{ include.post.content }}
   </div>
