@@ -5,10 +5,50 @@ permalink: /teaching/
 author_profile: true
 ---
 
-Click any course title to open the full course page, including syllabus details and additional information.
+<p>My teaching experience includes serving as instructor of record as well as supporting courses as a teaching assistant, demonstrator, and laboratory assistant. Select a course title to see additional details.</p>
 
 {% include base_path %}
 
-{% for post in site.teaching reversed %}
+{% assign instructor_courses = site.teaching | where: "role_group", "instructor" %}
+{% assign past_courses = instructor_courses | where: "status", "past" | sort: "date" | reverse %}
+{% assign current_courses = instructor_courses | where: "status", "current" | sort: "date" | reverse %}
+{% assign future_courses = instructor_courses | where: "status", "future" | sort: "date" %}
+{% assign assistant_courses = site.teaching | where: "role_group", "assistant" | sort: "date" | reverse %}
+
+<h2>Instructor of Record</h2>
+
+<h3>Past</h3>
+
+{% if past_courses.size > 0 %}
+  {% for post in past_courses %}
+    {% include archive-single.html %}
+  {% endfor %}
+{% else %}
+  <p>No past courses are listed.</p>
+{% endif %}
+
+<h3>Current</h3>
+
+{% if current_courses.size > 0 %}
+  {% for post in current_courses %}
+    {% include archive-single.html %}
+  {% endfor %}
+{% else %}
+  <p>No courses are currently listed.</p>
+{% endif %}
+
+<h3>Future</h3>
+
+{% if future_courses.size > 0 %}
+  {% for post in future_courses %}
+    {% include archive-single.html %}
+  {% endfor %}
+{% else %}
+  <p>No future courses are currently listed.</p>
+{% endif %}
+
+<h2>Teaching Assistant and Demonstrator</h2>
+
+{% for post in assistant_courses %}
   {% include archive-single.html %}
 {% endfor %}
