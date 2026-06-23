@@ -1,13 +1,13 @@
 ---
 layout: single
-title: "Teaching"
+title: "Teaching Experience and Pedagogical Training"
 permalink: /teaching/
 author_profile: true
 ---
 
 <div class="teaching-page">
 
-<p class="teaching-page__intro">My teaching experience includes serving as instructor of record as well as supporting courses as a teaching assistant, demonstrator, and laboratory assistant.</p>
+<p class="teaching-page__intro">My teaching experience includes serving as instructor of record as well as supporting courses as a teaching assistant, demonstrator, and laboratory assistant. I have complemented this classroom experience with formal training in evidence-based, learner-centered pedagogy.</p>
 
 {% include base_path %}
 
@@ -16,6 +16,7 @@ author_profile: true
 {% assign current_courses = instructor_courses | where: "status", "current" | sort: "date" | reverse %}
 {% assign future_courses = instructor_courses | where: "status", "future" | sort: "date" %}
 {% assign assistant_courses = site.teaching | where: "role_group", "assistant" | sort: "date" | reverse %}
+{% assign training_courses = site.teaching | where: "role_group", "training" | sort: "date" | reverse %}
 
 <h2 class="teaching-page__section-title">Instructor of Record</h2>
 
@@ -52,6 +53,12 @@ author_profile: true
 <h2 class="teaching-page__section-title">Teaching Assistant and Demonstrator</h2>
 
 {% for post in assistant_courses %}
+  {% include teaching-entry.html post=post %}
+{% endfor %}
+
+<h2 class="teaching-page__section-title">Pedagogical Training</h2>
+
+{% for post in training_courses %}
   {% include teaching-entry.html post=post %}
 {% endfor %}
 

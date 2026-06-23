@@ -1,6 +1,23 @@
-fieldwork:
+bc_fieldwork_2025:
   nimpkish_selfie.jpeg: "Add your custom caption for this image."
   nimpkish_green_silver.JPG: "Add your custom caption for this image."
   matt_log_pye_stream.jpeg: "Add your custom caption for this image."
   selfie_pye_stream.jpeg: "Add your custom caption for this image."
   sticklecrew_2025.jpeg: "Add your custom caption for this image."
+
+bc_fieldwork_2024: {}
+
+phd_research: {}
+
+landscape_genetics_dgs_2017:
+  IMG_1088.JPG: "Amphibian fieldwork during the 2017 Landscape Genetics Distributed Graduate Seminar."
+  IMG_1089.JPG: "An amphibian encountered during the 2017 Landscape Genetics Distributed Graduate Seminar."
+
+masters_research: {}
+
+zebrafish_neurobiology:
+  genetics_cover.jpg: "Brainbow-labeled neurons in the larval zebrafish brain."
+  radial_clones.jpg: "Radial clones of the larval zebrafish hindbrain labeled in Brainbow."
+
+just_fun:
+  zac_jtree.jpeg: "Exploring the boulders at Joshua Tree National Park."

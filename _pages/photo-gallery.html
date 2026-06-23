@@ -8,8 +8,7 @@ author_profile: false
 {% include base_path %}
 
 <div class="gallery-intro">
-  <p>Browse photos by project or album. Click a cover image to open a dedicated album page with a lightbox viewer.</p>
-  <p>To add a new album later, create a file in <code>_galleries/</code> and drop the photos into a matching folder inside <code>images/galleries/</code>.</p>
+  <p>Browse photos by project or album. Click a cover image to open its lightbox gallery.</p>
 </div>
 
 <div class="gallery-grid">
@@ -47,7 +46,7 @@ author_profile: false
           {% if cover_image != "" %}
             <img src="{{ base_path }}{{ cover_image }}" alt="{{ album.title }} cover image" loading="lazy">
           {% else %}
-            <div class="gallery-card__empty">Add photos to {{ album.gallery_dir }}</div>
+            <div class="gallery-card__empty">Photos coming soon.</div>
           {% endif %}
         </div>
         <div class="gallery-card__body">

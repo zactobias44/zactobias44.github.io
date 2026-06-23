@@ -176,7 +176,7 @@ Main content locations:
 - `_publications/` for publications
 - `_teaching/` for teaching/course entries
 - `_data/` for structured site data like navigation and gallery captions
-- `images/` for images
+- `images/` for organized image subdirectories
 - `files/` for PDFs and downloadable documents
 
 Main site controls:
@@ -210,7 +210,7 @@ Use these folders for each content type:
 - New publication: `_publications/`
 - New teaching item: `_teaching/`
 - New downloadable PDF/file: `files/`
-- New site image: `images/`
+- New site image: the appropriate subdirectory in `images/`
 
 ## Adding A Normal Page
 
@@ -432,8 +432,11 @@ Useful optional fields:
 
 General image guidance:
 
-- site-wide images go in `images/`
 - gallery images go in `images/galleries/<album-name>/`
+- page-specific images go in a named folder such as `images/about-me/` or `images/home/`
+- profile images go in `images/profile/`
+- favicons and manifest assets go in `images/site/`
+- images awaiting classification go in `images/pending/`
 
 Recommended habits:
 
