@@ -5,7 +5,9 @@ permalink: /teaching/
 author_profile: true
 ---
 
-<p>My teaching experience includes serving as instructor of record as well as supporting courses as a teaching assistant, demonstrator, and laboratory assistant.</p>
+<div class="teaching-page">
+
+<p class="teaching-page__intro">My teaching experience includes serving as instructor of record as well as supporting courses as a teaching assistant, demonstrator, and laboratory assistant.</p>
 
 {% include base_path %}
 
@@ -15,40 +17,42 @@ author_profile: true
 {% assign future_courses = instructor_courses | where: "status", "future" | sort: "date" %}
 {% assign assistant_courses = site.teaching | where: "role_group", "assistant" | sort: "date" | reverse %}
 
-<h2>Instructor of Record</h2>
+<h2 class="teaching-page__section-title">Instructor of Record</h2>
 
-<h3>Future</h3>
+<h3 class="teaching-page__period-title">Future</h3>
 
 {% if future_courses.size > 0 %}
   {% for post in future_courses %}
     {% include teaching-entry.html post=post %}
   {% endfor %}
 {% else %}
-  <p>No future courses are currently listed.</p>
+  <p class="teaching-page__empty">No future courses are currently listed.</p>
 {% endif %}
 
-<h3>Present</h3>
+<h3 class="teaching-page__period-title">Present</h3>
 
 {% if current_courses.size > 0 %}
   {% for post in current_courses %}
     {% include teaching-entry.html post=post %}
   {% endfor %}
 {% else %}
-  <p>No courses are currently listed.</p>
+  <p class="teaching-page__empty">No courses are currently listed.</p>
 {% endif %}
 
-<h3>Past</h3>
+<h3 class="teaching-page__period-title">Past</h3>
 
 {% if past_courses.size > 0 %}
   {% for post in past_courses %}
     {% include teaching-entry.html post=post %}
   {% endfor %}
 {% else %}
-  <p>No past courses are listed.</p>
+  <p class="teaching-page__empty">No past courses are listed.</p>
 {% endif %}
 
-<h2>Teaching Assistant and Demonstrator</h2>
+<h2 class="teaching-page__section-title">Teaching Assistant and Demonstrator</h2>
 
 {% for post in assistant_courses %}
   {% include teaching-entry.html post=post %}
 {% endfor %}
+
+</div>
