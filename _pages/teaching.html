@@ -5,7 +5,7 @@ permalink: /teaching/
 author_profile: true
 ---
 
-<p>My teaching experience includes serving as instructor of record as well as supporting courses as a teaching assistant, demonstrator, and laboratory assistant. Select a course title to see additional details.</p>
+<p>My teaching experience includes serving as instructor of record as well as supporting courses as a teaching assistant, demonstrator, and laboratory assistant.</p>
 
 {% include base_path %}
 
@@ -17,38 +17,38 @@ author_profile: true
 
 <h2>Instructor of Record</h2>
 
-<h3>Past</h3>
-
-{% if past_courses.size > 0 %}
-  {% for post in past_courses %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% else %}
-  <p>No past courses are listed.</p>
-{% endif %}
-
-<h3>Current</h3>
-
-{% if current_courses.size > 0 %}
-  {% for post in current_courses %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% else %}
-  <p>No courses are currently listed.</p>
-{% endif %}
-
 <h3>Future</h3>
 
 {% if future_courses.size > 0 %}
   {% for post in future_courses %}
-    {% include archive-single.html %}
+    {% include teaching-entry.html post=post %}
   {% endfor %}
 {% else %}
   <p>No future courses are currently listed.</p>
 {% endif %}
 
+<h3>Present</h3>
+
+{% if current_courses.size > 0 %}
+  {% for post in current_courses %}
+    {% include teaching-entry.html post=post %}
+  {% endfor %}
+{% else %}
+  <p>No courses are currently listed.</p>
+{% endif %}
+
+<h3>Past</h3>
+
+{% if past_courses.size > 0 %}
+  {% for post in past_courses %}
+    {% include teaching-entry.html post=post %}
+  {% endfor %}
+{% else %}
+  <p>No past courses are listed.</p>
+{% endif %}
+
 <h2>Teaching Assistant and Demonstrator</h2>
 
 {% for post in assistant_courses %}
-  {% include archive-single.html %}
+  {% include teaching-entry.html post=post %}
 {% endfor %}

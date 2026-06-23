@@ -1,0 +1,5 @@
+<article class="teaching-entry">
+  <h4>{{ include.post.title }}</h4>
+  <p class="page__meta">{{ include.post.type }}, <i>{{ include.post.venue }}</i>, {{ include.post.term | default: include.post.date | date: "%Y" }}</p>
+  {{ include.post.content }}
+</article>
