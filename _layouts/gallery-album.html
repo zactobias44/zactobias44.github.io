@@ -27,7 +27,14 @@ layout: default
               {% assign extension = file.extname | downcase %}
               {% if extension == ".jpg" or extension == ".jpeg" or extension == ".png" or extension == ".webp" or extension == ".gif" %}
                 {% assign image_count = image_count | plus: 1 %}
-                {% assign image_caption = file.name | replace: file.extname, '' | replace: '-', ' ' | replace: '_', ' ' %}
+                {% assign caption_name = file.name | replace: file.extname, '' %}
+                {% assign caption_parts = caption_name | split: '_' %}
+                {% assign possible_order = caption_parts | first | plus: 0 %}
+                {% if possible_order > 0 %}
+                  {% assign order_prefix = caption_parts | first | append: '_' %}
+                  {% assign caption_name = caption_name | remove_first: order_prefix %}
+                {% endif %}
+                {% assign image_caption = caption_name | replace: '-', ' ' | replace: '_', ' ' %}
                 {% if album_captions and album_captions[file.name] %}
                   {% assign image_caption = album_captions[file.name] %}
                 {% endif %}

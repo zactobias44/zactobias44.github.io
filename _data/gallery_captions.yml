@@ -13,7 +13,32 @@ landscape_genetics_dgs_2017:
   IMG_1088.JPG: "Amphibian fieldwork during the 2017 Landscape Genetics Distributed Graduate Seminar."
   IMG_1089.JPG: "An amphibian encountered during the 2017 Landscape Genetics Distributed Graduate Seminar."
 
-masters_research: {}
+# To add a caption, replace `null` with text in quotes. For example:
+#   paella.jpeg: "A well-earned paella after fieldwork."
+# Leave an entry as `null` to use its filename as the temporary caption.
+masters_research:
+  01_bellorchestia.jpg: "The unsuspecting beachhopper *Bellorchestia quoyana*, about to be parasitized by a mermithid nematode (or dissected by me, sorry...)"
+  02_poulin_book.jpg: "Robert was my advisor during my masters. He's the best. Also, here's what it looks like when your tear open a beachhopper and find a mermithid inside..."
+  03_thaumamermis_zealandica.jpeg: "Here's a close-up of what the nematode looks like once emerged"
+  04_tautuku.jpeg: "Tautuku Beach: one of my favorite fieldsites of the beachhopper-mermithid branch of my masters research"
+  05_bernie_tautuku.jpg: "And trusty ol' Bernie at Tautuku (it was 2016 after all)"
+  06_lab_goofball.jpeg: "If you knew me in 2016, you knew this beanie"
+  07_brenah_worm_closeup.jpeg: "The other system I worked on was horsehair worms. Check this out!"
+  08_brenah_holding_hairworm.jpeg: "And here it is all stretched out! Find yourself a spouse that will do this with you!"
+  09_brenah_zac_selfie.jpeg: "My trusty field assistant :)"
+  10_berne_mountains.jpg: "Okay I liked this car a lot okay?"
+  11_kopuwai.jpeg: "Kopuwai: pne of my favorite field sites of the horsehair worm branch of my masters research"
+  12_rainbow_lab.jpg: "Nice view from the genetics lab window huh?"
+  13_SEM_cuticle.jpg: "Here is an SEM of the new species of horsehair worm we described"
+  14_SEM_posterior.jpg: "And more!"
+  aramoana.jpeg: "Okay these aren't really research pics but it's New Zealand!"
+  cannongate_st.jpeg: "We lived right on this walking street that led down to the Octagon"
+  catlins.jpeg: "If you go to Dunedin, don't forget to see the Catlins! Next photo too"
+  nugget_point.jpeg: "Nugget Point"
+  otago_railway.jpeg: "Otago Railway Station. Flemish Rnnaissance Revival architectural style, I guess"
+  paella.jpeg: "Paella. Make a Spanish friend, you won't regret it. Also make Kiwi friends and listen to them try to say paella"
+  petrified_tidepool.jpeg: "Tidepools with petrified forest inlay"
+  yelloweye_binoc.jpeg: "Oh yeah there are penguins"
 
 zebrafish_neurobiology:
   genetics_cover.jpg: "Brainbow-labeled neurons in the larval zebrafish brain."
