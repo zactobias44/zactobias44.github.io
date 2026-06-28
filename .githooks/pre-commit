@@ -5,4 +5,7 @@ set -euo pipefail
 REPO_ROOT="$(git rev-parse --show-toplevel)"
 
 make --silent -C "$REPO_ROOT" sync-cv
+python3 "$REPO_ROOT/scripts/build_publications.py"
+
 git -C "$REPO_ROOT" add -- "files/Zac_Tobias_CV.pdf"
+git -C "$REPO_ROOT" add -- "_data/publications.json"

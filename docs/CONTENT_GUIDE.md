@@ -81,26 +81,20 @@ Talk description.
 
 ### Add a publication
 
-1. Create a new file in `_publications/`
-2. Add title, date, venue, and category
-3. Add `paperurl` or other links if you have them
+1. Add the publication to `bibliography/publications.bib`
+2. Put an optional PDF in `files/publications/`
+3. Run `python3 scripts/build_publications.py`
 
 Template:
 
-```md
----
-title: "Paper Title"
-collection: publications
-category: manuscripts
-permalink: /publication/2026-paper-title
-excerpt: "Short summary."
-date: 2026-04-11
-venue: "Journal Name"
-paperurl: "/files/paper.pdf"
-citation: "Citation text."
----
-
-Publication notes.
+```bibtex
+@article{Tobias2026Example,
+  title = {Paper Title},
+  author = {Tobias, Zachary},
+  journal = {Journal Name},
+  year = {2026},
+  pdf = {tobias-2026-example.pdf}
+}
 ```
 
 ### Add a teaching item
@@ -173,7 +167,7 @@ Main content locations:
 - `_galleries/` for photo album pages
 - `_research/` for research/project entries
 - `_talks/` for talks and presentations
-- `_publications/` for publications
+- `bibliography/publications.bib` for publications
 - `_teaching/` for teaching/course entries
 - `_data/` for structured site data like navigation and gallery captions
 - `images/` for organized image subdirectories
@@ -207,7 +201,7 @@ Use these folders for each content type:
 - New gallery album: `_galleries/` plus `images/galleries/<album-name>/`
 - New research item: `_research/`
 - New talk: `_talks/`
-- New publication: `_publications/`
+- New publication: `bibliography/publications.bib`
 - New teaching item: `_teaching/`
 - New downloadable PDF/file: `files/`
 - New site image: the appropriate subdirectory in `images/`
@@ -362,39 +356,37 @@ Useful optional fields:
 
 ## Adding A Publication
 
-Use `_publications/`.
+Edit `bibliography/publications.bib`. The Publications page is generated from
+this single bibliography.
 
 Minimal example:
 
-```md
----
-title: "Paper Title"
-collection: publications
-category: manuscripts
-permalink: /publication/2026-paper-title
-excerpt: "Short publication summary."
-date: 2026-04-11
-venue: "Journal Name"
-paperurl: "/files/my-paper.pdf"
-citation: "Tobias, Z. (2026). Paper Title. Journal Name."
----
-
-Optional description or notes.
+```bibtex
+@article{Tobias2026Example,
+  title = {Paper Title},
+  author = {Tobias, Zachary},
+  journal = {Journal Name},
+  volume = {1},
+  number = {2},
+  pages = {1--10},
+  year = {2026},
+  doi = {10.0000/example},
+  pdf = {tobias-2026-example.pdf}
+}
 ```
-
-Publication categories currently used in `_config.yml`:
-
-- `manuscripts`
-- `conferences`
 
 Useful optional fields:
 
-- `paperurl`
-- `slidesurl`
-- `bibtexurl`
-- `citation`
+- `volume`
+- `number`
+- `pages`
+- `doi`
+- `url`
+- `pdf`
 
-Put local PDFs in `files/`.
+Put local PDFs in `files/publications/`. The `pdf` field must match the PDF
+filename exactly. Run `python3 scripts/build_publications.py` after editing the
+bibliography. The pre-commit hook also runs this command automatically.
 
 ## Adding A Teaching Item
 
@@ -512,7 +504,7 @@ A good workflow is:
 
 Examples:
 
-- first add a publication, then later add `paperurl` and `citation`
+- first add a publication, then later add its local `pdf` field
 - first add a gallery album, then later add custom captions
 - first add a research item, then later add a teaser image
 
@@ -579,20 +571,14 @@ Talk description.
 
 ### New publication
 
-```md
----
-title: "Paper Title"
-collection: publications
-category: manuscripts
-permalink: /publication/2026-paper-title
-excerpt: "Short summary."
-date: 2026-04-11
-venue: "Journal Name"
-paperurl: "/files/paper.pdf"
-citation: "Citation text."
----
-
-Publication notes.
+```bibtex
+@article{Tobias2026Example,
+  title = {Paper Title},
+  author = {Tobias, Zachary},
+  journal = {Journal Name},
+  year = {2026},
+  pdf = {tobias-2026-example.pdf}
+}
 ```
 
 ### New teaching item
