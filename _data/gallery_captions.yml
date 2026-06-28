@@ -5,9 +5,44 @@ bc_fieldwork_2025:
   selfie_pye_stream.jpeg: "Add your custom caption for this image."
   sticklecrew_2025.jpeg: "Add your custom caption for this image."
 
-bc_fieldwork_2024: {}
+bc_fieldwork_2024:
+  01_roberts_dock.jpeg: "Dock at field site and accommodations: Roberts Lake, BC"
+  02_roberts_lake_resort.jpeg: "Home base."
+  03_throw_trap.jpeg: "Josh out to get those stickles."
+  04_andi.JPEG: "Our fearles leader, Andi, getting to work."
+  05_dissection.JPEG: "Josh and Zac slicing and snipping. "
+  06_dissection_shaka.JPEG: "100 fish down, 324 to go..."
+  07_sayward.jpeg: "Salmon River Estuary in Sayward, BC"
+  08_bob.jpeg: "Bob Lake. If you know, you know"
+  09_steaks.JPEG: "Find yourself a friend that steaks, and knows culinary words like fond"
+  10_aurora.jpeg: "First time seeing the aurora borealis!"
+  11_seattle.JPEG: "Nice way to end the trip :)"
 
-phd_research: {}
+phd_research:
+  01_botryllus_microscope.jpeg: "The star of the show, Botryllus schlosseri"
+  02_fouling_panel.jpeg: "And all of it's friends/competitors. This is how we sample the fouling community."
+  03_big_colony.JPG: "A particularly big colony of Botryllus"
+  04_Brenah_peeling.jpeg: "Find a spouse that will peel tunicates off of kelp for you."
+  05_pregnant_brenah.jpeg: "And do fieldwork carrying your first-born!"
+  06_colony_tupperware.jpeg: "They don't look as nice in a tupperware, but not bad!"
+  07_colony_tupperware_2.jpeg: "The diversity in color and patterning is really amazing."
+  08_sitka_boxes.jpeg: "This is how I'd collect the recently settled tunicate larvae (oozoids)."
+  09_tunicate_spawn_box.jpeg: "They are released from the parent colony and setle on the provided slides."
+  10_Rutgers.jpeg: "Got the opportunity to take my physiology experiments to some amazing places, like Tuckerton, NJ."
+  11_sheldon_jackson.jpeg: "And Sitka, AK. These were our accommodations!"
+  12_Bodega_cardiac.jpeg: "We also brought our rig for imaging tunicate hearts during a cold temperature ramp."
+  13_Gareth_pool.jpeg: "Fieldwork also included pool along the Russian River near Bodega Bay, CA."
+  14_Carolyn_bodega.jpeg: "Find a PhD advisor that will scrounge around on docks with you!"
+  15_bodega_team.jpeg: "The Bodega Bay crew"
+  16_harbour_breton.jpeg: "And assorted field photos from sampling trips for genetic samples. Harbour Breton, NL"
+  17_Ciona.jpeg: "Somewhere in Nova Scotia"
+  18_BarHarbor_icecream.JPG: "Pit stop for ice cream in Bar Harbor, ME"
+  19_NewBrunswick.jpeg: "Sunsets in St. Andrews, NB"
+  20_Tims.jpeg: "Tim Hortons is the fuel"
+  21_barry_NJ.jpeg: "Find a father that will nose his way into your field trip. I'm glad he did :)"
+  22_ice_friends.jpeg: "And friends on the Cape that stay with you through the highs and lows."
+  23_defense_cake.PNG: "And bake you an amazing defense cake! Thanks Yaamini and Sara!"
+  24_defense.PNG: "Finish line!"
 
 landscape_genetics_dgs_2017:
   IMG_1088.JPG: "Amphibian fieldwork during the 2017 Landscape Genetics Distributed Graduate Seminar."
