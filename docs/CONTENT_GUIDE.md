@@ -454,13 +454,16 @@ Link to them with a site-relative path:
 
 ## Updating The Home Page
 
-The current home page is `_pages/about.md` and uses:
+The root page redirects to the path selected by `homepage_path` in
+`_config.yml`.
 
-```md
-permalink: /
+```yml
+homepage_path: "/about-me/"
 ```
 
-If you edit that file, you are editing the actual site homepage.
+Use `/about-me/` for the normal homepage or `/landing-page-draft/` while
+developing `_pages/landing-page.md`. Restart the local Jekyll server after
+changing `_config.yml`.
 
 ## When To Use Markdown vs HTML
 

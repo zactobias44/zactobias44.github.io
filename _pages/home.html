@@ -1,0 +1,22 @@
+---
+layout: null
+permalink: /
+sitemap: false
+---
+
+{% assign homepage_url = site.homepage_path | default: "/about-me/" | relative_url %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="refresh" content="0; url={{ homepage_url }}">
+    <link rel="canonical" href="{{ homepage_url | absolute_url }}">
+    <title>Redirecting…</title>
+    <script>
+      window.location.replace({{ homepage_url | jsonify }});
+    </script>
+  </head>
+  <body>
+    <p><a href="{{ homepage_url }}">Continue to the homepage</a>.</p>
+  </body>
+</html>

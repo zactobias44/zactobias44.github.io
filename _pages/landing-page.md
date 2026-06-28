@@ -1,10 +1,8 @@
 ---
-permalink: /
+permalink: /landing-page-draft/
 title: "THIS WEBSITE IS CURRENTLY UNDER CONSTRUCTION. IN THE MEANTIME, ENJOY THESE PICS FROM OUR MOST RECENT FIELD SEASON"
 author_profile: true
-redirect_from: 
-  - /about/
-  - /about.html
+sitemap: false
 ---
 
 ![alt](/images/home/nimpkish_selfie.jpeg)
