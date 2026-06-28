@@ -1,0 +1,8 @@
+#!/bin/bash
+
+set -euo pipefail
+
+REPO_ROOT="$(git rev-parse --show-toplevel)"
+
+make --silent -C "$REPO_ROOT" sync-cv
+git -C "$REPO_ROOT" add -- "files/Zac_Tobias_CV.pdf"
