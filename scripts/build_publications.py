@@ -155,7 +155,7 @@ def format_authors(value: str) -> list[str]:
     authors = []
     for author in re.split(r"\s+and\s+", value):
         if author.strip().lower() == "others":
-            authors.append("et al.")
+            authors.append("et al")
             continue
         parts = [part.strip() for part in author.split(",")]
         if len(parts) >= 2:

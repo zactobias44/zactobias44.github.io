@@ -8,82 +8,39 @@ author_profile: true
 {% include base_path %}
 
 <style>
-  .publication-page__intro {
-    margin-bottom: 1.75rem;
+  .publication-bibliography {
+    padding: 0;
+    margin: 1.5rem 0 0;
+    list-style: none;
   }
 
-  .publication-list {
-    margin-top: 1.5rem;
-  }
-
-  .publication-entry {
-    padding: 0 0 1.25rem;
-    margin-bottom: 1.25rem;
-    border-bottom: 1px solid #e5e5e5;
-  }
-
-  .publication-entry__title {
-    margin: 0 0 0.35rem;
-    font-size: 1.1rem;
-    line-height: 1.4;
-  }
-
-  .publication-entry__citation,
-  .publication-entry__links {
-    margin: 0.3rem 0 0;
-  }
-
-  .publication-entry__citation {
-    font-size: 0.92rem;
-  }
-
-  .publication-entry__links {
-    font-size: 0.88rem;
+  .publication-bibliography li {
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+    text-indent: -2rem;
   }
 </style>
 
-<div class="publication-page">
-  <p class="publication-page__intro">
-    Peer-reviewed publications are listed below, with locally hosted PDFs where available.
-    {% if site.author.googlescholar %}
-      You can also find my work on
-      <a href="{{ site.author.googlescholar }}">Google Scholar</a>.
-    {% endif %}
-    <a href="{{ base_path }}/bibliography/publications.bib">Download the BibTeX bibliography</a>.
-  </p>
-
-  {% if site.data.publications and site.data.publications.size > 0 %}
-    <div class="publication-list">
-      {% for publication in site.data.publications %}
-        <article class="publication-entry">
-          <h2 class="publication-entry__title">{{ publication.title }}</h2>
-
-          <p class="publication-entry__citation">
-            {% if publication.authors.size > 0 %}
-              {{ publication.authors | join: ", " }}.
-            {% endif %}
-            {% if publication.year %}({{ publication.year }}).{% endif %}
-            {% if publication.venue %}<em>{{ publication.venue }}</em>{% endif %}{% if publication.volume %}, {{ publication.volume }}{% endif %}{% if publication.number %}({{ publication.number }}){% endif %}{% if publication.pages %}: {{ publication.pages | replace: "--", "–" }}{% endif %}.
-          </p>
-
-          {% if publication.pdf or publication.doi or publication.url %}
-            <p class="publication-entry__links">
-              {% if publication.pdf %}
-                <a href="{{ base_path }}{{ publication.pdf }}">PDF</a>
-              {% endif %}
-              {% if publication.doi %}
-                {% if publication.pdf %} · {% endif %}
-                <a href="https://doi.org/{{ publication.doi }}">DOI</a>
-              {% elsif publication.url %}
-                {% if publication.pdf %} · {% endif %}
-                <a href="{{ publication.url }}">Publication record</a>
-              {% endif %}
-            </p>
-          {% endif %}
-        </article>
-      {% endfor %}
-    </div>
-  {% else %}
-    <p>Publication list coming soon.</p>
+<p>
+  {% if site.author.googlescholar %}
+    Also available on <a href="{{ site.author.googlescholar }}">Google Scholar</a>.
   {% endif %}
-</div>
+  <a href="{{ base_path }}/bibliography/publications.bib">Download BibTeX</a>.
+</p>
+
+{% if site.data.publications and site.data.publications.size > 0 %}
+  <ol class="publication-bibliography">
+    {% for publication in site.data.publications %}
+      <li>
+        {% if publication.authors.size > 0 %}{{ publication.authors | join: ", " }}.{% endif %}
+        {% if publication.year %} ({{ publication.year }}).{% endif %}
+        {{ publication.title }}.
+        {% if publication.venue %}<em>{{ publication.venue }}</em>{% endif %}{% if publication.volume %}, {{ publication.volume }}{% endif %}{% if publication.number %}({{ publication.number }}){% endif %}{% if publication.pages %}, {{ publication.pages | replace: "--", "–" }}{% endif %}.
+        {% if publication.pdf %}<a href="{{ base_path }}{{ publication.pdf }}">[PDF]</a>{% endif %}
+        {% if publication.doi %}<a href="https://doi.org/{{ publication.doi }}">[DOI]</a>{% elsif publication.url %}<a href="{{ publication.url }}">[Record]</a>{% endif %}
+      </li>
+    {% endfor %}
+  </ol>
+{% else %}
+  <p>Publication list coming soon.</p>
+{% endif %}
