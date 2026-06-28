@@ -64,9 +64,6 @@ landscape_genetics_dgs_2017:
   IMG_1088.JPG: "First time herping with the herp folks! As far as study systems go, herp people are pretty rad."
   IMG_1089.JPG: "Look at this little guy!"
 
-# To add a caption, replace `null` with text in quotes. For example:
-#   paella.jpeg: "A well-earned paella after fieldwork."
-# Leave an entry as `null` to use its filename as the temporary caption.
 masters_research:
   01_bellorchestia.jpg: "The unsuspecting beachhopper *Bellorchestia quoyana*, about to be parasitized by a mermithid nematode (or dissected by me, sorry...)"
   02_poulin_book.jpg: "Robert was my advisor during my masters. He's the best. Also, here's what it looks like when your tear open a beachhopper and find a mermithid inside..."
