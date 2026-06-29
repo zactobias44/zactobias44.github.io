@@ -35,23 +35,6 @@ author_profile: true
     {% endif %}
   </section>
 
-  <section class="research-section" aria-labelledby="past-research">
-    <div class="research-section__heading">
-      <p class="research-section__eyebrow">Previously</p>
-      <h2 id="past-research">Past</h2>
-    </div>
-
-    {% if past_projects.size > 0 %}
-      <div class="research-grid">
-        {% for project in past_projects %}
-          {% include research-card.html project=project %}
-        {% endfor %}
-      </div>
-    {% else %}
-      <p class="research-section__empty">Past projects coming soon.</p>
-    {% endif %}
-  </section>
-
   <section class="research-section" aria-labelledby="future-research">
     <div class="research-section__heading">
       <p class="research-section__eyebrow">Next</p>
@@ -68,6 +51,23 @@ author_profile: true
       <p class="research-section__empty">
         Future directions will be added here as they take shape.
       </p>
+    {% endif %}
+  </section>
+
+  <section class="research-section" aria-labelledby="past-research">
+    <div class="research-section__heading">
+      <p class="research-section__eyebrow">Previously</p>
+      <h2 id="past-research">Past</h2>
+    </div>
+
+    {% if past_projects.size > 0 %}
+      <div class="research-grid">
+        {% for project in past_projects %}
+          {% include research-card.html project=project %}
+        {% endfor %}
+      </div>
+    {% else %}
+      <p class="research-section__empty">Past projects coming soon.</p>
     {% endif %}
   </section>
 </div>
