@@ -1,0 +1,174 @@
+---
+layout: default
+permalink: /landing-page/
+title: "Zac Tobias"
+excerpt: "Evolutionary biologist studying how aquatic organisms respond and adapt to environmental change."
+author_profile: false
+---
+
+{% include base_path %}
+{% assign homepage = site.data.homepage %}
+{% assign carousel_interval = homepage.autoplay_seconds | default: 7 | times: 1000 %}
+
+<main class="home-landing">
+  <section
+    class="home-hero"
+    data-home-carousel
+    data-carousel-interval="{{ carousel_interval }}"
+    aria-label="Research and fieldwork photographs"
+    aria-roledescription="carousel"
+    tabindex="0"
+  >
+    <div class="home-hero__slides" aria-live="off">
+      {% for slide in homepage.slides %}
+        <figure
+          class="home-hero__slide{% if forloop.first %} is-active{% endif %}"
+          data-carousel-slide
+          aria-hidden="{% if forloop.first %}false{% else %}true{% endif %}"
+        >
+          <img
+            alt="{{ slide.alt }}"
+            style="object-position: {{ slide.position | default: 'center center' }};"
+            {% if forloop.first %}
+              src="{{ base_path }}{{ slide.image }}"
+              loading="eager"
+              fetchpriority="high"
+            {% else %}
+              src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+              data-src="{{ base_path }}{{ slide.image }}"
+              loading="lazy"
+            {% endif %}
+          >
+        </figure>
+      {% endfor %}
+    </div>
+
+    <div class="home-hero__shade" aria-hidden="true"></div>
+
+    <div class="home-hero__inner">
+      <div class="home-hero__content">
+        <p class="home-hero__eyebrow">Evolutionary biology · physiology · genomics</p>
+        <h1>Zac Tobias</h1>
+        <p class="home-hero__lede">
+          I study how aquatic organisms respond—and adapt—to rapid environmental
+          and ecological change.
+        </p>
+        <p class="home-hero__role">
+          Postdoctoral scholar at UC San Diego · Lecturer at the University of San Diego
+        </p>
+        <div class="home-hero__actions">
+          <a class="home-hero__button home-hero__button--primary" href="{{ base_path }}/about-me/">
+            About my work
+          </a>
+          <a class="home-hero__button home-hero__button--secondary" href="{{ base_path }}/publications/">
+            View publications
+          </a>
+        </div>
+      </div>
+    </div>
+
+    {% if homepage.slides.size > 1 %}
+      <div class="home-hero__controls">
+        <button
+          class="home-hero__toggle"
+          type="button"
+          data-carousel-toggle
+          aria-label="Pause slideshow"
+        >
+          <span data-carousel-toggle-icon aria-hidden="true">Ⅱ</span>
+        </button>
+
+        <div class="home-hero__dots" role="group" aria-label="Choose a slide">
+          {% for slide in homepage.slides %}
+            <button
+              class="home-hero__dot{% if forloop.first %} is-active{% endif %}"
+              type="button"
+              data-carousel-dot
+              data-slide-index="{{ forloop.index0 }}"
+              aria-label="Show slide {{ forloop.index }} of {{ homepage.slides.size }}"
+              aria-current="{% if forloop.first %}true{% else %}false{% endif %}"
+            ></button>
+          {% endfor %}
+        </div>
+      </div>
+    {% endif %}
+  </section>
+
+  <div class="home-landing__body">
+    <section class="home-research" aria-labelledby="home-research-title">
+      <div class="home-section-heading">
+        <p class="home-section-heading__eyebrow">Research</p>
+        <h2 id="home-research-title">Connecting genes, organisms, and environments</h2>
+      </div>
+      <div class="home-research__copy">
+        <p>
+          From host–parasite interactions and invasive tunicates to threespine
+          stickleback, my work asks how organisms persist when they encounter new
+          stressors. I combine field collections, physiological experiments,
+          molecular biology, and genomic analyses to connect variation in genes
+          and pathways with whole-organism performance and ecological outcomes.
+        </p>
+        <a class="home-text-link" href="{{ base_path }}/about-me/">
+          Read more about my path and research <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="home-explore" aria-labelledby="home-explore-title">
+      <div class="home-explore__intro">
+        <p class="home-section-heading__eyebrow">Explore</p>
+        <h2 id="home-explore-title">What you’ll find here</h2>
+        <p>
+          Use the navigation above or the links below to browse my work,
+          teaching, photographs, and professional history.
+        </p>
+      </div>
+
+      <div class="home-link-grid">
+        <a class="home-link-card" href="{{ base_path }}/about-me/">
+          <span class="home-link-card__number">01</span>
+          <h3>About Me</h3>
+          <p>My academic path, research background, and the systems that brought me here.</p>
+          <span class="home-link-card__arrow" aria-hidden="true">→</span>
+        </a>
+
+        <a class="home-link-card" href="{{ base_path }}/research/">
+          <span class="home-link-card__number">02</span>
+          <h3>Research</h3>
+          <p>An evolving overview of the questions, approaches, and projects driving my work.</p>
+          <span class="home-link-card__arrow" aria-hidden="true">→</span>
+        </a>
+
+        <a class="home-link-card home-link-card--featured" href="{{ base_path }}/publications/">
+          <span class="home-link-card__number">03</span>
+          <h3>Publications</h3>
+          <p>A complete bibliography with a directly downloadable PDF of every paper.</p>
+          <span class="home-link-card__arrow" aria-hidden="true">→</span>
+        </a>
+
+        <a class="home-link-card" href="{{ base_path }}/teaching/">
+          <span class="home-link-card__number">04</span>
+          <h3>Teaching</h3>
+          <p>Courses taught, classroom experience, and training in evidence-based pedagogy.</p>
+          <span class="home-link-card__arrow" aria-hidden="true">→</span>
+        </a>
+
+        <a class="home-link-card" href="{{ base_path }}/photo-gallery/">
+          <span class="home-link-card__number">05</span>
+          <h3>Photo Gallery</h3>
+          <p>Field sites, organisms, laboratory work, collaborators, and places along the way.</p>
+          <span class="home-link-card__arrow" aria-hidden="true">→</span>
+        </a>
+
+        <a class="home-link-card" href="{{ base_path }}/cv/">
+          <span class="home-link-card__number">06</span>
+          <h3>CV</h3>
+          <p>A concise record of research, teaching, publications, awards, and experience.</p>
+          <span class="home-link-card__arrow" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </section>
+  </div>
+</main>
+
+<script src="{{ base_path }}/assets/js/home-carousel.js" defer></script>

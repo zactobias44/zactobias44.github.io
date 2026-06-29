@@ -19,9 +19,9 @@ baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "zactobias44/zactobias44.github.io"
 
 # Homepage switch:
-#   "/about-me/"           = use the About Me page (normal setting)
-#   "/landing-page-draft/" = use the original landing page while developing it
-homepage_path            : "/about-me/"
+#   "/landing-page/" = use the visual landing page
+#   "/about-me/"     = send visitors directly to the About Me page
+homepage_path            : "/landing-page/"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.

@@ -1,0 +1,28 @@
+# Landing-page carousel settings.
+# Add, remove, or reorder slides here. Keep image paths site-relative.
+autoplay_seconds: 7
+
+slides:
+  - image: /images/galleries/bc-fieldwork-2024/01_roberts_dock.jpeg
+    alt: "A wooden dock extending into Roberts Lake in British Columbia."
+    position: "center 58%"
+
+  - image: /images/galleries/bc-fieldwork-2025/nimpkish_colors.JPG
+    alt: "Two differently colored threespine stickleback held during field sampling."
+    position: "center 64%"
+
+  - image: /images/galleries/bc-fieldwork-2025/thiemer_estuary.jpeg
+    alt: "Three field researchers in waders at a coastal estuary."
+    position: "center 64%"
+
+  - image: /images/galleries/zebrafish-neurobiology/radial_clones.jpg
+    alt: "Multicolored Brainbow-labeled cells in the developing zebrafish brain."
+    position: "center center"
+
+  - image: /images/galleries/masters-research/nugget_point.jpeg
+    alt: "Rocky sea stacks off Nugget Point on New Zealand's South Island."
+    position: "center 52%"
+
+  - image: /images/galleries/bc-fieldwork-2024/10_aurora.jpeg
+    alt: "Pink and green aurora above a dark forest in British Columbia."
+    position: "center 44%"

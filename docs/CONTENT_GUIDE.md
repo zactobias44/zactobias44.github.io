@@ -458,12 +458,34 @@ The root page redirects to the path selected by `homepage_path` in
 `_config.yml`.
 
 ```yml
-homepage_path: "/about-me/"
+homepage_path: "/landing-page/"
 ```
 
-Use `/about-me/` for the normal homepage or `/landing-page-draft/` while
-developing `_pages/landing-page.md`. Restart the local Jekyll server after
-changing `_config.yml`.
+Use `/landing-page/` for the visual homepage or `/about-me/` to send visitors
+directly to the About Me page. Landing-page text lives in
+`_pages/landing-page.html`, while carousel images and timing live in
+`_data/homepage.yml`. Restart the local Jekyll server after changing
+`_config.yml`.
+
+### Edit the visual landing page
+
+- Edit headings, research text, buttons, and site links in
+  `_pages/landing-page.html`.
+- Add, remove, or reorder carousel images in `_data/homepage.yml`.
+- Change `autoplay_seconds` in `_data/homepage.yml` to adjust slide timing.
+- Keep carousel image paths site-relative, such as
+  `/images/galleries/album-name/photo.jpeg`.
+- Edit landing-page styling in `_sass/layout/_home.scss`.
+- Edit carousel behavior in `assets/js/home-carousel.js`.
+
+Each carousel slide needs an image path, useful alternative text, and an
+optional CSS `object-position` value:
+
+```yml
+- image: /images/galleries/album-name/photo.jpeg
+  alt: "Brief description of the photograph."
+  position: "center 60%"
+```
 
 ## When To Use Markdown vs HTML
 
