@@ -1,0 +1,12 @@
+{% assign publication_ids = include.ids | split: "," %}
+<div class="research-project__publications">
+  <h2>Related publications</h2>
+  <ol class="publication-bibliography">
+    {% for publication_id in publication_ids %}
+      {% assign matching_publications = site.data.publications | where: "id", publication_id %}
+      {% for publication in matching_publications %}
+        <li>{% include publication-citation.html publication=publication %}</li>
+      {% endfor %}
+    {% endfor %}
+  </ol>
+</div>

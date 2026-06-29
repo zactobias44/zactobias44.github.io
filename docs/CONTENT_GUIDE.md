@@ -302,30 +302,38 @@ Rules:
 
 ## Adding A Research Item
 
-Use `_research/`.
+Each file in `_research/` creates both a card on the main Research page and a
+click-through project page.
 
-Minimal example:
+Copy an existing file in `_research/` or use this template:
 
 ```md
 ---
 title: "Project Title"
-collection: research
-excerpt: "Short summary shown in the research list."
+excerpt: "One or two sentences shown on the card and at the top of the project page."
+status: present
+period: "Current research"
+order: 1
+card_image: /images/path/to/photo.jpg
+card_image_alt: "A short description of the photo."
+card_image_position: "center center"
 ---
 
-Write the project description here.
+Write the longer project description here. You can use normal Markdown,
+including headings, links, and lists.
 ```
 
-Optional extras:
+The main fields are:
 
-- add an image to the excerpt with inline HTML
-- use `.html` instead of `.md` if you want more custom markup
+- `status`: use `past`, `present`, or `future` to choose the section
+- `period`: the small label shown above the card title
+- `order`: controls the order within that section; lower numbers appear first
+- `card_image`: a site-relative path beginning with `/images/`
+- `card_image_alt`: describes the image for visitors using screen readers
+- `card_image_position`: controls the crop, for example `"center 30%"`
 
-Example excerpt with image:
-
-```yml
-excerpt: "Short summary<br/><img src='/images/example.jpg'>"
-```
+The filename becomes the URL. For example,
+`_research/my-new-project.md` appears at `/research/my-new-project/`.
 
 ## Adding A Talk
 

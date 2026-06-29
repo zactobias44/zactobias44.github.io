@@ -289,10 +289,10 @@ defaults:
       path: ""
       type: research
     values:
-      layout: single
+      layout: research-project
       author_profile: true
-      share: true
-      comment: true
+      share: false
+      comments: false
   # _talks
   - scope:
       path: ""

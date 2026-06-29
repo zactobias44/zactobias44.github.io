@@ -1,0 +1,7 @@
+{% assign publication = include.publication %}
+{% if publication.authors.size > 0 %}{{ publication.authors | join: ", " }}.{% endif %}
+{% if publication.year %} ({{ publication.year }}).{% endif %}
+{{ publication.title }}.
+{% if publication.venue %}<em>{{ publication.venue }}</em>{% endif %}{% if publication.volume %}, {{ publication.volume }}{% endif %}{% if publication.number %}({{ publication.number }}){% endif %}{% if publication.pages %}, {{ publication.pages | replace: "--", "–" }}{% endif %}.
+{% if publication.pdf %}<a href="{{ base_path }}{{ publication.pdf }}">[PDF]</a>{% endif %}
+{% if publication.doi %}<a href="https://doi.org/{{ publication.doi }}">[DOI]</a>{% elsif publication.url %}<a href="{{ publication.url }}">[Record]</a>{% endif %}

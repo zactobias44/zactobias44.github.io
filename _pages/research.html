@@ -5,4 +5,69 @@ permalink: /research/
 author_profile: true
 ---
 
-Coming soon!
+{% include base_path %}
+
+{% assign present_projects = site.research | where: "status", "present" | sort: "order" %}
+{% assign past_projects = site.research | where: "status", "past" | sort: "order" %}
+{% assign future_projects = site.research | where: "status", "future" | sort: "order" %}
+
+<div class="research-page">
+  <p class="research-page__intro">
+    My research connects molecular and physiological mechanisms with the
+    ecological and evolutionary processes that shape organisms in changing
+    environments. Select a project to learn more.
+  </p>
+
+  <section class="research-section" aria-labelledby="present-research">
+    <div class="research-section__heading">
+      <p class="research-section__eyebrow">Now</p>
+      <h2 id="present-research">Present</h2>
+    </div>
+
+    {% if present_projects.size > 0 %}
+      <div class="research-grid">
+        {% for project in present_projects %}
+          {% include research-card.html project=project %}
+        {% endfor %}
+      </div>
+    {% else %}
+      <p class="research-section__empty">Present projects coming soon.</p>
+    {% endif %}
+  </section>
+
+  <section class="research-section" aria-labelledby="past-research">
+    <div class="research-section__heading">
+      <p class="research-section__eyebrow">Previously</p>
+      <h2 id="past-research">Past</h2>
+    </div>
+
+    {% if past_projects.size > 0 %}
+      <div class="research-grid">
+        {% for project in past_projects %}
+          {% include research-card.html project=project %}
+        {% endfor %}
+      </div>
+    {% else %}
+      <p class="research-section__empty">Past projects coming soon.</p>
+    {% endif %}
+  </section>
+
+  <section class="research-section" aria-labelledby="future-research">
+    <div class="research-section__heading">
+      <p class="research-section__eyebrow">Next</p>
+      <h2 id="future-research">Future</h2>
+    </div>
+
+    {% if future_projects.size > 0 %}
+      <div class="research-grid">
+        {% for project in future_projects %}
+          {% include research-card.html project=project %}
+        {% endfor %}
+      </div>
+    {% else %}
+      <p class="research-section__empty">
+        Future directions will be added here as they take shape.
+      </p>
+    {% endif %}
+  </section>
+</div>

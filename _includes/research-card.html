@@ -1,0 +1,27 @@
+{% assign project = include.project %}
+<article class="research-card">
+  <a class="research-card__link" href="{{ base_path }}{{ project.url }}">
+    <div class="research-card__media">
+      {% if project.card_image %}
+        <img
+          src="{{ base_path }}{{ project.card_image }}"
+          alt="{{ project.card_image_alt | default: project.title }}"
+          loading="lazy"
+          style="object-position: {{ project.card_image_position | default: 'center center' }};"
+        >
+      {% endif %}
+    </div>
+    <div class="research-card__body">
+      {% if project.period %}
+        <span class="research-card__period">{{ project.period }}</span>
+      {% endif %}
+      <h3>{{ project.title }}</h3>
+      {% if project.excerpt %}
+        <p>{{ project.excerpt | strip_html }}</p>
+      {% endif %}
+      <span class="research-card__more">
+        Learn more <span aria-hidden="true">→</span>
+      </span>
+    </div>
+  </a>
+</article>

@@ -1,0 +1,33 @@
+---
+layout: single
+---
+
+{% include base_path %}
+
+<div class="research-project">
+  {% if page.period %}
+    <p class="research-project__period">{{ page.period }}</p>
+  {% endif %}
+
+  {% if page.card_image %}
+    <figure class="research-project__hero">
+      <img
+        src="{{ base_path }}{{ page.card_image }}"
+        alt="{{ page.card_image_alt | default: page.title }}"
+        style="object-position: {{ page.detail_image_position | default: page.card_image_position | default: 'center center' }};"
+      >
+    </figure>
+  {% endif %}
+
+  {% if page.excerpt %}
+    <p class="research-project__lead">{{ page.excerpt }}</p>
+  {% endif %}
+
+  <div class="research-project__content">
+    {{ content }}
+  </div>
+
+  <a class="research-project__back" href="{{ base_path }}/research/">
+    <span aria-hidden="true">←</span> Back to research
+  </a>
+</div>
