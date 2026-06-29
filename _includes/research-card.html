@@ -1,7 +1,7 @@
 {% assign project = include.project %}
 <article class="research-card">
   <a class="research-card__link" href="{{ base_path }}{{ project.url }}">
-    <div class="research-card__media">
+    <div class="research-card__media{% if project.card_image_fit == 'contain' %} research-card__media--contain{% endif %}">
       {% if project.card_image %}
         <img
           src="{{ base_path }}{{ project.card_image }}"

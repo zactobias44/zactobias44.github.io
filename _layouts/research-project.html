@@ -10,7 +10,7 @@ layout: single
   {% endif %}
 
   {% if page.card_image %}
-    <figure class="research-project__hero">
+    <figure class="research-project__hero{% if page.detail_image_fit == 'contain' %} research-project__hero--contain{% endif %}">
       <img
         src="{{ base_path }}{{ page.card_image }}"
         alt="{{ page.card_image_alt | default: page.title }}"

@@ -1,6 +1,6 @@
 ---
-title: "Rapid adaptation in threespine stickleback"
-excerpt: "Investigating how stickleback populations respond to novel environmental and ecological conditions."
+title: "Parallel adaptation in threespine stickleback"
+excerpt: "Investigating the repeatability of adaptation across various axes of ecotypic divergence following post-glacial colonization."
 status: present
 period: "Current postdoctoral research"
 order: 1

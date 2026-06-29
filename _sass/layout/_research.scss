@@ -92,6 +92,10 @@
   background: var(--global-footer-bg-color);
 }
 
+.research-card__media--contain {
+  background: #fff;
+}
+
 .page__content .research-card__media img {
   display: block;
   width: 100%;
@@ -100,6 +104,10 @@
   border-radius: 0;
   object-fit: cover;
   transition: transform 0.35s ease;
+}
+
+.page__content .research-card__media--contain img {
+  object-fit: contain;
 }
 
 .research-card:hover .research-card__media img {
@@ -158,6 +166,10 @@
   background: var(--global-footer-bg-color);
 }
 
+.research-project__hero--contain {
+  background: #fff;
+}
+
 .page__content .research-project__hero img {
   display: block;
   width: 100%;
@@ -165,6 +177,10 @@
   margin: 0;
   border-radius: 0;
   object-fit: cover;
+}
+
+.page__content .research-project__hero--contain img {
+  object-fit: contain;
 }
 
 .research-project__lead {
