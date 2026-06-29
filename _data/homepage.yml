@@ -9,7 +9,7 @@ slides:
 
   - image: /images/galleries/bc-fieldwork-2025/nimpkish_colors.JPG
     alt: "Two differently colored threespine stickleback held during field sampling."
-    position: "center 64%"
+    position: "30% 64%"
 
   - image: /images/galleries/phd-research/02_Botryllus-schlosseri4.jpg
     alt: "A close-up of golden star tunicate colonies."
@@ -17,7 +17,7 @@ slides:
 
   - image: /images/galleries/bc-fieldwork-2025/thiemer_estuary.jpeg
     alt: "Three field researchers in waders at a coastal estuary."
-    position: "30% 64%"
+    position: "10% 64%"
 
   - image: /images/home/Rutgers_mirror.jpeg
     alt: "Rutgers University Marine Field Station."
