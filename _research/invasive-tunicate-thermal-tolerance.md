@@ -20,4 +20,6 @@ I combined common-environment experiments, physiological measurements, and popul
 
 Additional photographs are collected in the [PhD research gallery](/photo-gallery/phd-research-photos/).
 
+Research team: Gareth Miller, MiCaela Acord, Carolyn Tepolt
+
 {% include research-publications.html ids="tobias2025variation,tobias2024geography" %}

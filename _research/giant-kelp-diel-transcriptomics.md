@@ -12,4 +12,6 @@ detail_image_position: "center 45%"
 
 Details coming soon!
 
+Resarch team: Carolina Carpenter, Andrew Allen
+
 Cover photo © Pat Webster.

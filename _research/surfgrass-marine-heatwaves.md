@@ -12,4 +12,6 @@ detail_image_position: "center center"
 
 Details coming soon!
 
+Research team: Jose Sandoval Gil, Manuel Vivanco Berkovich, Raquel Muñiz Salazar
+
 Cover photo by Phillip Colla/OceanLight.com.

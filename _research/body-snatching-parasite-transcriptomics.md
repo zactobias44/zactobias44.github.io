@@ -12,6 +12,8 @@ detail_image_position: "65% 55%"
 
 Details coming soon!
 
+Research team: Amy Fowler, April Blakeslee, John Darling, Mark Torchin, Whitman Miller, Gregory Ruiz, Carolyn Tepolt
+
 Additional photographs are collected in the [PhD research gallery](/photo-gallery/phd-research-photos/). Cover photo by Will Parson/Chesapeake Bay Program.
 
 {% include research-publications.html ids="tobias2021invasion" %}
