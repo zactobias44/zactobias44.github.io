@@ -11,5 +11,5 @@ detail_image_position: "center 62%"
 ---
 
 Details coming soon!
- 
+
 This project page will grow as the work develops. In the meantime, photographs from recent sampling seasons are available in the [2024 fieldwork](/photo-gallery/bc-fieldwork-2024/) and [2025 fieldwork](/photo-gallery/bc-fieldwork-2025/) galleries.
