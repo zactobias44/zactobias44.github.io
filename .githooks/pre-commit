@@ -4,6 +4,7 @@ set -euo pipefail
 
 REPO_ROOT="$(git rev-parse --show-toplevel)"
 
+# Keep the public PDF CV synced from the local source path defined in Makefile.
 make --silent -C "$REPO_ROOT" sync-cv
 python3 "$REPO_ROOT/scripts/build_publications.py"
 

@@ -57,28 +57,6 @@ author_profile: true
 Content here.
 ```
 
-### Add a talk
-
-1. Create a new file in `_talks/`
-2. Add talk metadata
-3. Add a short description below the front matter
-
-Template:
-
-```md
----
-title: "Talk Title"
-collection: talks
-type: "Talk"
-permalink: /talks/2026-04-11-talk-title
-venue: "Venue Name"
-date: 2026-04-11
-location: "City, State, Country"
----
-
-Talk description.
-```
-
 ### Add a publication
 
 1. Add the publication to `bibliography/publications.bib`
@@ -163,10 +141,9 @@ bundle exec jekyll serve
 
 Main content locations:
 
-- `_pages/` for top-level pages like home, CV, research, talks, teaching, publications, and the gallery landing page
+- `_pages/` for top-level pages like home, CV, research, teaching, publications, and the gallery landing page
 - `_galleries/` for photo album pages
 - `_research/` for research/project entries
-- `_talks/` for talks and presentations
 - `bibliography/publications.bib` for publications
 - `_teaching/` for teaching/course entries
 - `_data/` for structured site data like navigation and gallery captions
@@ -200,7 +177,6 @@ Use these folders for each content type:
 - New top-level page: `_pages/`
 - New gallery album: `_galleries/` plus `images/galleries/<album-name>/`
 - New research item: `_research/`
-- New talk: `_talks/`
 - New publication: `bibliography/publications.bib`
 - New teaching item: `_teaching/`
 - New downloadable PDF/file: `files/`
@@ -226,7 +202,7 @@ Notes:
 
 - If you want it in the top nav, also add it to `_data/navigation.yml`
 - Most pages inherit the `single` layout automatically from `_config.yml`
-- Archive-style pages like research/talks/publications often use `layout: archive`
+- Archive-style pages like publications often use `layout: archive`
 
 ## Adding A Navigation Link
 
@@ -335,29 +311,6 @@ The main fields are:
 The filename becomes the URL. For example,
 `_research/my-new-project.md` appears at `/research/my-new-project/`.
 
-## Adding A Talk
-
-Use `_talks/`.
-
-Minimal example:
-
-```md
----
-title: "Talk Title"
-collection: talks
-type: "Talk"
-permalink: /talks/2026-04-11-my-talk
-venue: "University or Conference Name"
-date: 2026-04-11
-location: "City, State, Country"
----
-
-Short description of the talk.
-```
-
-Useful optional fields:
-
-- `type`
 - `venue`
 - `date`
 - `location`
@@ -584,22 +537,6 @@ order: 1
 ---
 
 Optional album intro text.
-```
-
-### New talk
-
-```md
----
-title: "Talk Title"
-collection: talks
-type: "Talk"
-permalink: /talks/2026-04-11-talk-title
-venue: "Venue Name"
-date: 2026-04-11
-location: "City, State, Country"
----
-
-Talk description.
 ```
 
 ### New publication
