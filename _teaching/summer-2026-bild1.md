@@ -8,7 +8,7 @@ date: 2026-08-01
 term: "Summer Session II 2026"
 location: "La Jolla, California"
 role_group: instructor
-status: future
+status: current
 ---
 
 This accelerated five-week course introduces the structure and function of cells in prokaryotic and eukaryotic organisms. Students examine the molecules found in cells, how cells obtain and use energy, how they respond to their environments, and how biological information is passed to the next generation. 
