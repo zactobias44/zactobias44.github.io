@@ -1,5 +1,32 @@
 [
   {
+    "id": "tobias2026constraint",
+    "type": "article",
+    "title": "Evolutionary constraint predicts the repeatability of transcriptional divergence during repeated adaptation",
+    "authors": [
+      "Zachary JC Tobias",
+      "Andreas Härer",
+      "Diana J Rennison"
+    ],
+    "year": "2026",
+    "venue": "bioRxiv",
+    "url": "https://www.biorxiv.org/content/10.64898/2026.09.28.755181v1",
+    "status": "submitted"
+  },
+  {
+    "id": "tobias2026architecture",
+    "type": "article",
+    "title": "A distributed genomic architecture of repeated thermal adaptation in a low-dispersal marine invader",
+    "authors": [
+      "Zachary JC Tobias",
+      "Carolyn K Tepolt"
+    ],
+    "year": "2026",
+    "venue": "bioRxiv",
+    "url": "https://www.biorxiv.org/content/10.64898/2026.09.28.755179v1",
+    "status": "submitted"
+  },
+  {
     "id": "tobias2025variation",
     "type": "article",
     "title": "Variation of thermal tolerance during northward range expansion in the invasive golden star tunicate, Botryllus schlosseri",

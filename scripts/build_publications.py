@@ -181,7 +181,7 @@ def build_publications(source: str) -> list[dict[str, object]]:
             "venue": fields.get("journal", fields.get("booktitle", "")),
         }
 
-        for name in ("volume", "number", "pages", "doi", "url"):
+        for name in ("volume", "number", "pages", "doi", "url", "status"):
             if fields.get(name):
                 publication[name] = fields[name]
 
